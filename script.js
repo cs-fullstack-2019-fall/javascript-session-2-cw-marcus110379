@@ -95,6 +95,7 @@ class Calculator_class {
            // Get the operation to perform from the User
            current_operation = prompt("Enter the math operation to be performed (ADD)")
                .toUpperCase();
+               // NOTE : update prompt 
          if(current_operation === "X"){
              continue;
          }
@@ -105,6 +106,8 @@ class Calculator_class {
 
            // Perform the operation and display the results
            // TODO: Student to implement support for CLR (clear), SUB (subtract), MULT (multiply), and DIV (division Calculator methods
+
+           // NOTE : no functionality for CLR
            switch (current_operation) {
                case "ADD":
                    alert(`New sum Total : ${calculator_instance.add(first_int, second_int)}`);
